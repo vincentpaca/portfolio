@@ -15,10 +15,11 @@
 development:
   adapter: postgresql
   encoding: unicode
+  host: localhost
   database: portfolio_development
   pool: 5
-  username: portfolio
-  password:
+  username: vincent
+  password: passw0rd
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -41,10 +42,11 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: portfolio_test
+  host: localhost
+  database: portfolio_development
   pool: 5
-  username: portfolio
-  password:
+  username: vincent
+  password: passw0rd
 
 production:
   adapter: postgresql
