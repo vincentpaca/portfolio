@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: edeyalabs
+  api_key: '843296987829356'
+  api_secret: euTMvhGhTSbacBC9eqfJKxnMqDw
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: edeyalabs
+  api_key: '843296987829356'
+  api_secret: euTMvhGhTSbacBC9eqfJKxnMqDw
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: edeyalabs
+  api_key: '843296987829356'
+  api_secret: euTMvhGhTSbacBC9eqfJKxnMqDw
+  enhance_image_tag: true
+  static_image_support: false
