@@ -48,7 +48,13 @@ execute = (command) ->
   if typeof(dictionary[lang[0]]) == 'undefined'
     append(command, "error")
   else
-    append(command, "result")
+    if dictionary[lang[0]]["single"]
+      if lang.length > 1
+        append(command, "invalid_params")
+      else
+        append(lang[0], "result")
+    else
+      append(command, "result")
 
 
 append = (command, type) ->
@@ -57,5 +63,7 @@ append = (command, type) ->
       $(".console").append("<div class='line normal'>root@localhost:~/home$ " + command + "</div>")
     when "result"
       $(".console").append("<div class='margin result'>" + "t0d0" + "</div>")
+    when "invalid_params"
+      $(".console").append("<div class='line error'>No topics match '" + command + "'. Type 'help' for a list of commands.</div>")
     else
       $(".console").append("<div class='line error'>'" + command + "' is not the command you are looking for.</div>")
