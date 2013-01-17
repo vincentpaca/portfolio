@@ -1,0 +1,70 @@
+$blue: #09101E
+$green: #63DE00
+$margin: 15px
+
+body
+  background: $blue
+  font-family: courier
+
+.content
+  position: relative
+
+#input
+  display: block
+  position: relative
+  float: left
+  background: #09101E
+
+.bottom
+  position: absolute
+  bottom: 5px
+  width: 100%
+  margin-left: $margin
+
+.label
+  width: 229px
+  position: relative
+  color: $green
+  float: left
+
+#caret
+  width: 13px
+  height: 18px
+  position: relative
+  background: darken($green, 20)
+  float: left
+  display: inline-block
+  margin-top: -1px
+  -webkit-animation-name: blink
+  -webkit-animation-duration: 1s
+  -webkit-animation-iteration-count: infinite
+  -moz-animation-name: blink
+  -moz-animation-duration: 1s
+  -moz-animation-iteration-count: infinite
+
+.console
+  position: absolute
+  bottom: 22px
+  margin-left: $margin
+  overflow: hidden
+
+.help
+  color: #fefefe
+
+.result
+  color: #81bbd5
+
+.normal
+  color: #63DE00
+
+.error
+  color: #F62217
+
+.line
+  margin-bottom: 5px
+  p
+    margin-top: 5px
+
+.margin
+  margin-left: $margin * 2
+  margin-bottom: 2px
