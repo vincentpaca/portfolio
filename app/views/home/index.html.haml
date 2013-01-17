@@ -1,14 +1,15 @@
-.content
-  .console
-    .line.green
-      %p Welcome to the Interactive Portfolio Shell!
-      %p{ :style => "margin-left: 15px;" }
-        ** Documentation: #{link_to "https://www.github.com/vincentpaca/portfolio", "https://www.github.com/vincentpaca/portfolio", :target => "_blank" }
-      %p{ :style => "margin-left: 15px; margin-bottom: 20px;" }
-        ** Full Specification: #{link_to "http://careers.stackoverflow.com/vincentpaca", "http://careers.stackoverflow.com/vincentpaca", :target => "_blank" }
-      %p Last Login: #{DateTime.now.strftime("%a %b %H:%M:%S %Y")} from #{@ip}
-      %p Type 'help' for a list of commands.
-      %br/
-  .bottom
-    .label $
-    #input
+.console
+  .normal
+    %p Welcome to the Interactive Portfolio Shell!
+    %p{ :style => "margin-left: 15px;" }
+      ** Documentation: #{link_to "https://www.github.com/vincentpaca/portfolio", "https://www.github.com/vincentpaca/portfolio", :target => "_blank" }
+    %p{ :style => "margin-left: 15px; margin-bottom: 20px;" }
+      ** Full Specification: #{link_to "http://careers.stackoverflow.com/vincentpaca", "http://careers.stackoverflow.com/vincentpaca", :target => "_blank" }
+    %p Last Login: #{DateTime.now.strftime("%a %b %H:%M:%S %Y")} from #{@ip}
+    %p Type 'help' for a list of commands.
+    %br/
+
+.bottom
+  .label root@localhost:~/home$
+  #input.normal
+  #caret
